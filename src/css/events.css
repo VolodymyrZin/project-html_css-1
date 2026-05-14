@@ -23,7 +23,9 @@
   border-radius: 28px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    padding: 8px;
+    align-items: center;
+    gap: 32px;
+    padding: 8px 0px;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #dbdada;
@@ -52,8 +54,12 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 24px;
     flex: 1;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 16px;
   }
 }
 .events-item-title {
@@ -66,10 +72,14 @@
   align-items: center;
   @media screen and (min-width: 768px) {
     flex-direction: column;
-    align-items: flex-end;
     gap: 4px;
     min-width: 171px;
     flex-shrink: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    gap: 16px;
+    margin-left: auto;
   }
 }
 .events-location {
@@ -93,9 +103,15 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.7;
+  }
   @media screen and (min-width: 768px) {
-    width: 97px;
-    height: 40px;
+    max-width: 97px;
     flex-shrink: 0;
   }
 }
