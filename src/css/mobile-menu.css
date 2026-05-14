@@ -9,7 +9,7 @@
     z-index: 999;
     top: 0;
     left: 0;
-    max-width: 375px;
+    width: 375px;
     height: 100%;
     background-color: var(--background-color-base);
     pointer-events: none;
