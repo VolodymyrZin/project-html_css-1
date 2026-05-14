@@ -44,6 +44,7 @@
 .benefits-icon {
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
 }
 
 .benefits-subscribe-wrapper {
