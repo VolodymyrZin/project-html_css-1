@@ -51,7 +51,31 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media only screen and (min-width: 1440px) {
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+
+  .team-item {
+    width: calc((100% - 160px) / 6);
+  }
+
+  .team-position {
+    max-width: 180px;
+  }
 }
