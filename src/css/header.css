@@ -67,11 +67,11 @@
 
 .nav-register-btn:hover,
 .nav-register-btn:focus {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .nav-register-btn:active {
-  opacity: 75%;
+  opacity: 0.75;
 }
 
 .menu-open-btn {
