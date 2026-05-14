@@ -88,6 +88,15 @@
   }
 }
 
+.nav-register-btn:hover,
+.nav-register-btn:focus {
+  opacity: 50%;
+}
+
+.nav-register-btn:active{
+  opacity: 75%;
+}
+
 .menu-open-btn {
   @media screen and (max-width: 767px) {
     background-color: transparent;
