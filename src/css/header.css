@@ -20,8 +20,15 @@
 
 .header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+     justify-content: space-between;
+  
+    
+  }
+  
+  
 
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
@@ -72,8 +79,8 @@
   font-weight: 500;
 
   @media screen and (max-width: 767px) {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: auto;
+   
   }
 
   @media screen and (min-width: 1440px) {
@@ -86,6 +93,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    margin-left: 32px;
   }
 
   @media screen and (min-width: 768px) {
