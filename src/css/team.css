@@ -58,6 +58,7 @@
     align-items: flex-start;
     column-gap: 24px;
     row-gap: 24px;
+    padding-bottom: 64px;
   }
 
   .team-item {
@@ -69,6 +70,7 @@
   .team-list {
     flex-wrap: nowrap;
     gap: 32px;
+    padding-bottom: 37px;
   }
 
   .team-item {
