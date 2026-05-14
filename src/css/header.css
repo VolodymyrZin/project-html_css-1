@@ -1,19 +1,12 @@
-.header {
-  background-color: var(--background-color-base);
-}
-
 .header .container {
-  padding-right: 28px;
   padding-left: 44px;
   padding-top: 7px;
 
   @media screen and (min-width: 768px) {
-    padding-right: 32px;
     padding-left: 56px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding-right: 64px;
     padding-left: 88px;
   }
 }
@@ -23,12 +16,8 @@
   align-items: center;
 
   @media screen and (min-width: 768px) {
-     justify-content: space-between;
-  
-    
+    justify-content: space-between;
   }
-  
-  
 
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
@@ -51,36 +40,24 @@
     gap: 32px;
     margin-left: auto;
   }
-
 }
 
 .nav-link {
-  font-family: 'Tajawal', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0em;
   text-align: left;
-  color: #0c0708;
 }
 
 .nav-register-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Tajawal', sans-serif;
-  color: var(--color-base);
   background-color: var(--background-color-accent);
   border-radius: 100px;
   width: 97px;
   height: 40px;
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
   font-weight: 500;
 
   @media screen and (max-width: 767px) {
     margin-left: auto;
-   
   }
 
   @media screen and (min-width: 1440px) {
@@ -93,7 +70,7 @@
   opacity: 50%;
 }
 
-.nav-register-btn:active{
+.nav-register-btn:active {
   opacity: 75%;
 }
 
@@ -108,5 +85,4 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-
 }
