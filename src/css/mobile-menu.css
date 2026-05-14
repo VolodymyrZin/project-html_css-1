@@ -1,5 +1,4 @@
 @media screen and (max-width: 767px) {
-    
   .mobile-menu-container {
     padding: 7px 12px 40px 44px;
   }
@@ -9,7 +8,7 @@
     z-index: 999;
     top: 0;
     left: 0;
-    width: 375px;
+    width: 100%;
     height: 100%;
     background-color: var(--background-color-base);
     pointer-events: none;
@@ -36,14 +35,13 @@
     background-color: transparent;
     border: none;
     padding: 0;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
   }
 
   .mobile-menu-register-btn {
-    width: 97px;
-    height: 40px;
+    min-width: 97px;
+    min-height: 40px;
     font-weight: 500;
 
     display: flex;
@@ -52,15 +50,15 @@
     background-color: var(--background-color-accent);
     border-radius: 100px;
     margin-left: auto;
-  }
 
-  .mobile-menu-register-btn:hover,
-  .mobile-menu-register-btn:focus {
-    opacity: 0.5;
-  }
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
 
-  .mobile-menu-register-btn:active {
-    opacity: 0.75;
+    &:active {
+      opacity: 0.75;
+    }
   }
 
   .mobile-menu-nav {
