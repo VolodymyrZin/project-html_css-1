@@ -1,5 +1,6 @@
 .events .section-title {
   text-align: start;
+  margin-bottom: 8px;
 }
 .section-text {
   margin-bottom: 32px;
@@ -9,6 +10,9 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media screen and (min-width: 768px) {
+    gap: 0px;
+  }
 }
 .events-item {
   display: flex;
@@ -17,6 +21,16 @@
   padding: 12px;
   border: 1px solid #dbdada;
   border-radius: 28px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 8px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #dbdada;
+    &:first-child {
+      border-top: 1px solid #dbdada;
+    }
+  }
 }
 .events-img {
   display: block;
@@ -24,11 +38,23 @@
   height: 225px;
   border-radius: 16px;
   object-fit: cover;
+  @media screen and (min-width: 768px) {
+    width: 144px;
+    height: 144px;
+    flex-shrink: 0;
+  }
 }
 .events-content {
   display: flex;
   flex-direction: column-reverse;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
 }
 .events-item-title {
   font-size: 24px;
@@ -38,6 +64,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    min-width: 171px;
+    flex-shrink: 0;
+  }
 }
 .events-location {
   display: flex;
@@ -60,4 +93,9 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 97px;
+    height: 40px;
+    flex-shrink: 0;
+  }
 }
