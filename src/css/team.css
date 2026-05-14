@@ -6,16 +6,13 @@
   font-size: 48px;
   line-height: 1.1;
   text-align: center;
-  color: var(--color-base);
 }
 
 .team-text {
-  max-width: 335px;
   margin: 0 auto 40px;
 
   font-size: 18px;
   text-align: center;
-  color: var(--color-base);
 }
 
 .team-list {
@@ -43,7 +40,6 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  color: var(--color-base);
 }
 
 .team-position {
@@ -52,7 +48,6 @@
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  color: var(--color-base);
 }
 
 @media only screen and (min-width: 768px) {
