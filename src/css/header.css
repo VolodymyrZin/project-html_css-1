@@ -68,6 +68,8 @@
     border: none;
     padding: 0;
     margin-left: 16px;
+    min-width: 48px;
+    max-height: 48px;
   }
 
   @media screen and (min-width: 768px) {
@@ -80,7 +82,3 @@
   max-height: 58px;
 }
 
-.menu-open-icon {
-  min-width: 48px;
-  max-height: 48px;
-}
