@@ -1,4 +1,12 @@
+.mobile-menu {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: block;
+  }
+
   .mobile-menu-container {
     padding-top: 7px;
     padding-bottom: 32px;
