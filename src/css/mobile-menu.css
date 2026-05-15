@@ -1,6 +1,7 @@
 @media screen and (max-width: 767px) {
   .mobile-menu-container {
-    padding: 7px 20px 32px 20px;
+    padding-top: 7px;
+    padding-bottom: 32px;
   }
 
   .mobile-menu {
@@ -30,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
   }
 
   .mobile-menu-close-btn {
@@ -38,7 +40,7 @@
     padding: 0;
     min-width: 48px;
     min-height: 48px;
-    margin-left: 16px;
+    /* margin-left: 16px; */
   }
 
   .mobile-menu-register-btn {
