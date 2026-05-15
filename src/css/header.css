@@ -1,23 +1,10 @@
 .header .container {
-  padding-left: 44px;
   padding-top: 7px;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 56px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding-left: 88px;
-  }
 }
 
 .header-content {
   display: flex;
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    justify-content: space-between;
-  }
 
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
@@ -25,6 +12,10 @@
 }
 
 .navigation {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
   @media screen and (min-width: 1440px) {
     margin-left: auto;
   }
@@ -55,12 +46,9 @@
   width: 97px;
   height: 40px;
   font-weight: 500;
+  margin-left: auto;
 
-  @media screen and (max-width: 767px) {
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     margin-left: 32px;
   }
 }
@@ -79,10 +67,20 @@
     background-color: transparent;
     border: none;
     padding: 0;
-    margin-left: 32px;
+    margin-left: 16px;
   }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.icon-logo-header {
+  min-width: 117px;
+  max-height: 58px;
+}
+
+.menu-open-icon {
+  min-width: 48px;
+  max-height: 48px;
 }
