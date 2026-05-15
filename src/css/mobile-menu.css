@@ -1,4 +1,3 @@
-@media screen and (max-width: 767px) {
   .mobile-menu-container {
     padding-top: 7px;
     padding-bottom: 32px;
@@ -88,11 +87,6 @@
     min-width: 117px;
     max-height: 58px;
   }
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
+
 
 
