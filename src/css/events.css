@@ -1,4 +1,5 @@
 .events .section-title {
+  margin-bottom: 8px;
   text-align: start;
 }
 .section-text {
@@ -9,6 +10,9 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media screen and (min-width: 768px) {
+    gap: 0;
+  }
 }
 .events-item {
   display: flex;
@@ -17,18 +21,50 @@
   padding: 12px;
   border: 1px solid #dbdada;
   border-radius: 28px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #dbdada;
+
+    &:first-child {
+      border-top: 1px solid #dbdada;
+    }
+  }
 }
+
 .events-img {
-  display: block;
   width: 100%;
-  height: 225px;
   border-radius: 16px;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 144px;
+    height: 144px;
+  }
+}
+picture {
+  flex-shrink: 0;
 }
 .events-content {
   display: flex;
   flex-direction: column-reverse;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 16px;
+  }
 }
 .events-item-title {
   font-size: 24px;
@@ -38,16 +74,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    gap: 4px;
+  }
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    gap: 16px;
+    margin-left: auto;
+  }
+}
+
+.events-location,
+.events-date {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 14px;
 }
 .events-location {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
+  color: inherit;
   text-decoration: none;
-}
-.events-date {
-  font-size: 14px;
 }
 .events-btn {
   display: block;
@@ -56,8 +106,19 @@
   border: 1px solid rgba(12, 7, 8, 0.15);
   border-radius: 100px;
   font-weight: 500;
-  color: inherit;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 97px;
+    margin-left: auto;
+  }
 }
