@@ -2,6 +2,8 @@
   background-color: var(--background-color-footer);
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .footer-content {
