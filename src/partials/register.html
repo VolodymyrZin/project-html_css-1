@@ -11,6 +11,7 @@
           id="user-name"
           placeholder="Emma"
           required
+          pattern="^[a-zA-Z\s\.]{5,64}$"
         />
       </div>
 
@@ -23,6 +24,7 @@
           id="user-email"
           placeholder="hello@wildsketch.com"
           required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         />
       </div>
       <div class="form-wrapper">
@@ -34,6 +36,7 @@
           name="user-describe"
           id="user-describe"
           placeholder="Type your skills..."
+          maxlength="500"
         ></textarea>
       </div>
       <button class="register-button" type="submit">Register</button>

@@ -16,6 +16,10 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .form-wrapper {
@@ -63,6 +67,10 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
   }
 }
 
