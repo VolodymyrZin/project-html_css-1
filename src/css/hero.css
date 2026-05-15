@@ -2,27 +2,72 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media screen and (min-width: 1440px) {
+    width: 423px;
+  }
+}
+
+.hero-content-desk {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
 .hero-content .hero-title {
+  margin-bottom: 24px;
+
+  font-family: var(--font-family-second);
+  font-weight: 700;
   font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.01em;
   text-align: left;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    max-width: 601px;
+  }
 }
 
 .hero-text {
   font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0em;
+  }
 }
 
 .hero-btn-links {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
 }
 
 .hero-btn {
@@ -36,6 +81,11 @@
 
   font-weight: 500;
   font-size: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin: 0;
+    width: 159px;
+  }
 }
 
 .hero-btn-register {
@@ -50,6 +100,11 @@
   &:focus {
     opacity: 0.5;
   }
+
+  @media screen and (min-width: 1440px) {
+    margin: 0;
+    width: 105px;
+  }
 }
 
 .hero-btn-learnmore {
@@ -63,5 +118,24 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 0;
+    width: 127px;
+  }
+}
+
+.hero img {
+  width: 100%;
+  max-width: 335px;
+  height: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 857px;
   }
 }
