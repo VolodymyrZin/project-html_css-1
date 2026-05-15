@@ -1,0 +1,49 @@
+.register .container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.register .register-title {
+  font-family: var(--font-family-second);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-describe {
+  width: 100%;
+  height: 180px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-image {
+  display: block;
+  width: 335px;
+  height: 286px;
+  border-radius: 16px;
+  object-fit: cover;
+}
