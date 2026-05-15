@@ -40,18 +40,10 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register img {
-  width: 100%;
-  max-width: 335px;
-  height: auto;
-
-  /* width: 335px;
+.register-image {
+  display: block;
+  width: 335px;
   height: 286px;
-  object-fit: cover; */
+  border-radius: 16px;
+  object-fit: cover;
 }
-
-/* display: block;
-width: 335px;
-height: 286px;
-border-radius: 16px;
-object-fit: cover; */

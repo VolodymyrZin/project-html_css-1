@@ -38,16 +38,38 @@
       </div>
       <button class="register-button" type="submit">Register</button>
     </form>
-    <img
-      srcset="
-        /img/avif/registert-class-with-students.avif    1x,
-        /img/avif/registert-class-with-students@2x.avif 2x
-      "
-      src="/img/avif/registert-class-with-students.avif"
-      alt="Student is painting"
-      loading="lazy"
-      width="335"
-      height="286"
-    />
+
+    <div class="register-image">
+      <picture>
+        <source
+          srcset="
+            /img/avif/register-class-with-students-mob.avif    1x,
+            /img/avif/register-class-with-students-mob@2x.avif 2x
+          "
+          media="(max-width: 767.98px)"
+        />
+        <source
+          srcset="
+            /img/avif/register-class-with-students-tab.avif    1x,
+            /img/avif/register-class-with-students-tab@2x.avif 2x
+          "
+          media="(min-width: 768px) and (max-width: 1439.98px)"
+        />
+        <source
+          srcset="
+            /img/avif/register-class-with-students.avif    1x,
+            /img/avif/register-class-with-students@2x.avif 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <img
+          src="/img/avif/register-class-with-students-mob.avif"
+          alt="Students are painting"
+          loading="lazy"
+          width="335"
+          height="286"
+        />
+      </picture>
+    </div>
   </div>
 </section>
