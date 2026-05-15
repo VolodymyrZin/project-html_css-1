@@ -91,6 +91,9 @@ picture {
   margin-left: auto;
   white-space: nowrap;
   font-size: 14px;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
 }
 .events-location {
   display: flex;
@@ -102,6 +105,7 @@ picture {
 .events-btn {
   display: block;
   width: 100%;
+  line-height: 1.35;
   padding: 8px 20px;
   border: 1px solid rgba(12, 7, 8, 0.15);
   border-radius: 100px;
