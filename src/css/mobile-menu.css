@@ -2,7 +2,6 @@
   .mobile-menu-container {
     padding-top: 7px;
     padding-bottom: 32px;
-
   }
 
   .mobile-menu {
@@ -90,3 +89,10 @@
     max-height: 58px;
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+
