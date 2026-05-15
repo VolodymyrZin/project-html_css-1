@@ -2,9 +2,16 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .register .register-title {
+  margin-bottom: 32px;
   font-family: var(--font-family-second);
   font-weight: 700;
   font-size: 48px;
@@ -16,10 +23,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  @media screen and (min-width: 768px) {
-    justify-content: flex-start;
-  }
 }
 
 .form-wrapper {
@@ -71,6 +74,20 @@
 
   @media screen and (min-width: 768px) {
     width: 340px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 304px;
+  }
+}
+
+.register-content-desk {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 1440px) {
+    width: 640px;
   }
 }
 
