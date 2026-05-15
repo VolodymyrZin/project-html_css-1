@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .mobile-menu-container {
-    padding: 7px 12px 40px 44px;
+    padding: 7px 20px 32px 20px;
   }
 
   .mobile-menu {
@@ -37,6 +37,7 @@
     padding: 0;
     min-width: 48px;
     min-height: 48px;
+    margin-left: 16px;
   }
 
   .mobile-menu-register-btn {
@@ -75,5 +76,10 @@
     align-items: center;
     text-align: center;
     gap: 25px;
+  }
+
+  .mobile-menu-logo-icon {
+    min-width: 117px;
+    max-height: 58px;
   }
 }
