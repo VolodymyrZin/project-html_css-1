@@ -15,21 +15,21 @@
   @media screen and (min-width: 768px) {
     margin-left: auto;
   }
-
-  @media screen and (min-width: 1440px) {
-    margin-left: auto;
-  }
 }
 
 .nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+
+.nav-list-header {
   @media screen and (max-width: 767px) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 32px;
-    margin-left: auto;
   }
 }
 
