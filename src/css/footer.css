@@ -35,12 +35,9 @@
   }
 }
 
-.footer-link {
-  color: var(--color-base);
-
+.footer-nav-link {
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.5;
 }
 
 .footer-copyright {
