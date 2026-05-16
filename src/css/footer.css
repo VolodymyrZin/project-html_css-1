@@ -25,14 +25,10 @@
   height: 112px;
 }
 
-.footer-list {
-  display: flex;
+.footer-nav-list {
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  list-style: none;
   padding: 0;
-  margin: 0 0 32px 0;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -49,6 +45,7 @@
 
 .footer-copyright {
   width: 100%;
+  margin-top: 32px;
 
   border-top: 1px solid rgba(12, 7, 8, 0.15);
 
