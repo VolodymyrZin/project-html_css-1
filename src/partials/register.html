@@ -1,43 +1,52 @@
 <section class="register section" id="register">
   <div class="container">
-    <h2 class="register-title">Register</h2>
-    <form class="register-form">
-      <div class="form-wrapper">
-        <label class="form-label" for="user-name">Name*</label>
-        <input
-          class="form-input"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder="Emma"
-          required
-        />
-      </div>
+    <div class="register-content-desk">
+      <h2 class="register-title">Register</h2>
+      <form class="register-form">
+        <div class="form-wrapper">
+          <label class="form-label" for="user-name">Name*</label>
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Emma"
+            required
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            title="Name must be 5-64 characters, only letters, spaces and dots"
+          />
+          <span class="form-error">Error text</span>
+        </div>
 
-      <div class="form-wrapper">
-        <label class="form-label" for="user-email">Email*</label>
-        <input
-          class="form-input"
-          type="email"
-          name="user-email"
-          id="user-email"
-          placeholder="hello@wildsketch.com"
-          required
-        />
-      </div>
-      <div class="form-wrapper">
-        <label class="form-label" for="user-describe"
-          >Describe your skills</label
-        >
-        <textarea
-          class="form-describe"
-          name="user-describe"
-          id="user-describe"
-          placeholder="Type your skills..."
-        ></textarea>
-      </div>
-      <button class="register-button" type="submit">Register</button>
-    </form>
+        <div class="form-wrapper">
+          <label class="form-label" for="user-email">Email*</label>
+          <input
+            class="form-input"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="hello@wildsketch.com"
+            required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Enter a valid email address"
+          />
+          <span class="form-error">Error text</span>
+        </div>
+        <div class="form-wrapper">
+          <label class="form-label" for="user-describe"
+            >Describe your skills</label
+          >
+          <textarea
+            class="form-describe"
+            name="user-describe"
+            id="user-describe"
+            placeholder="Type your skills..."
+            maxlength="500"
+          ></textarea>
+        </div>
+        <button class="register-button" type="submit">Register</button>
+      </form>
+    </div>
 
     <div class="register-image">
       <picture>
