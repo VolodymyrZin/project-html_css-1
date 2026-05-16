@@ -83,13 +83,12 @@
 
 @media only screen and (min-width: 1440px) {
   .team {
-    padding-bottom: 0px;
+    padding-bottom: 37px;
   }
 
   .team-list {
     flex-wrap: nowrap;
     gap: 32px;
-    padding-bottom: 37px;
   }
 
   .team-item {
