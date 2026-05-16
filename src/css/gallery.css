@@ -21,6 +21,7 @@
 .gallery-item {
   width: calc((100% - 16px) / 2);
   border-radius: 16px;
+  overflow: hidden;
 }
 
 .gallery-item:nth-child(-n + 3) {
@@ -33,7 +34,6 @@
 }
 .gallery-item:nth-child(-n + 3) .gallery-image {
   @media screen and (min-width: 768px) {
-    max-width: 218px;
     width: 100%;
   }
   @media only screen and (min-width: 1440px) {
@@ -52,7 +52,6 @@
 
 .gallery-item:nth-child(n + 4) .gallery-image {
   @media screen and (min-width: 768px) {
-    max-width: 218px;
     width: 100%;
   }
   @media only screen and (min-width: 1440px) {
