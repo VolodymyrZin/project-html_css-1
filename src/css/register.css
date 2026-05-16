@@ -10,6 +10,12 @@
   }
 }
 
+.section.register {
+  @media screen and (min-width: 1440px) {
+    padding: 112px 0;
+  }
+}
+
 .register .register-title {
   margin-bottom: 32px;
   font-family: var(--font-family-second);
