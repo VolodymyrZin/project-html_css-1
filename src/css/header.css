@@ -1,10 +1,11 @@
-.header .container {
-  padding-top: 7px;
-}
-
 .header-content {
+  height: 64px;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    height: 72px;
+  }
 
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
@@ -21,7 +22,6 @@
   display: flex;
   gap: 32px;
 }
-
 
 .nav-list-header {
   @media screen and (max-width: 767px) {
@@ -67,9 +67,9 @@
     background-color: transparent;
     border: none;
     padding: 0;
-    margin-left: 16px;
-    min-width: 48px;
-    max-height: 48px;
+    margin-left: 28px;
+    width: 24px;
+    height: 24px;
   }
 
   @media screen and (min-width: 768px) {
@@ -81,4 +81,3 @@
   min-width: 117px;
   max-height: 58px;
 }
-
