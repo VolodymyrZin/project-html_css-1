@@ -34,8 +34,7 @@
 .benefits-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding: 8px 0;
+  gap: 40px;
 }
 .benefits-item {
   display: flex;
