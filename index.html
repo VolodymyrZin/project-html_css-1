@@ -5,10 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/project-html_css-1/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project HTML/CSS</title>
+    <meta
+      name="description"
+      content="Join Wild Sketch plein air drawing workshops. Unleash your creativity in nature with outdoor sketching sessions for beginners and experienced artists."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Tajawal:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,7 +26,7 @@
     <header class="header">
   <div class="container">
     <div class="header-content">
-      <a href="/index.html" class="logo-header">
+      <a href="/index.html" class="logo-header" aria-label="Wild Sketch - home">
         <svg width="70" height="49" class="icon-logo-header">
           <use href="/project-html_css-1/assets/sprite-DfbCbrtv.svg#icon-logo"></use>
         </svg>
@@ -79,15 +83,24 @@
       </ul>
     </div>
 
-    <img
-      srcset="/project-html_css-1/assets/hero-house-DZtR__U8.avif 1x, /project-html_css-1/assets/hero-house@2x-Af5rQhFB.avif 2x"
-      src="/project-html_css-1/assets/hero-house-DZtR__U8.avif"
-      alt="hero house"
-      fetchpriority="high"
-      loading="lazy"
-      width="335"
-      height="258"
-    />
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="/project-html_css-1/assets/hero-house-desktop-Bm7dEu_7.avif 1x, /project-html_css-1/assets/hero-house-desktop@2x-BD8QgLIC.avif 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/project-html_css-1/assets/hero-house-tablet-LbMELzwS.avif 1x, /project-html_css-1/assets/hero-house-tablet@2x-CiVmIVea.avif 2x"
+      />
+      <img
+        srcset="/project-html_css-1/assets/hero-house-mobile-Bo9-5qJr.avif 1x, /project-html_css-1/assets/hero-house-mobile@2x-sYj16fG5.avif 2x"
+        src="/project-html_css-1/assets/hero-house-mobile-Bo9-5qJr.avif"
+        alt="hero house"
+        fetchpriority="high"
+        width="335"
+        height="258"
+      />
+    </picture>
   </div>
 </section>
 
@@ -138,15 +151,27 @@
           </li>
         </ul>
       </div>
-      <img
-        src="/project-html_css-1/assets/benefits-hippo-BSmqZi6j.avif"
-        srcset="/project-html_css-1/assets/benefits-hippo-BSmqZi6j.avif 1x, /project-html_css-1/assets/benefits-hippo@2x-yWPrQz_6.avif 2x"
-        alt="little hippo"
-        class="benefits-hippo-img"
-        loading="lazy"
-        width="335"
-        height="317"
-      />
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/project-html_css-1/assets/benefits-hippo-desktop-GoJQFpom.avif 1x, /project-html_css-1/assets/benefits-hippo-desktop@2x-UiKQAsO_.avif 2x"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="/project-html_css-1/assets/benefits-hippo-tablet-B1f2LQkp.avif 1x, /project-html_css-1/assets/benefits-hippo-tablet@2x-CODPdcdd.avif 2x"
+        />
+
+        <img
+          srcset="/project-html_css-1/assets/benefits-hippo-mobile-B2qwe2op.avif 1x, /project-html_css-1/assets/benefits-hippo-mobile@2x-B05PU9zg.avif 2x"
+          src="/project-html_css-1/assets/benefits-hippo-mobile-B2qwe2op.avif"
+          alt="little hippo"
+          class="benefits-hippo-img"
+          loading="lazy"
+          width="335"
+          height="317"
+        />
+      </picture>
     </div>
   </div>
 </section>
@@ -940,7 +965,7 @@
     <footer class="footer">
   <div class="container">
     <div class="footer-content">
-      <a href="/index.html" class="logo-footer">
+      <a href="/index.html" class="logo-footer" aria-label="Wild Sketch - home">
         <svg class="logo-icon-footer" width="161" height="112">
           <use href="/project-html_css-1/assets/sprite-DfbCbrtv.svg#icon-logo"></use>
         </svg>
@@ -963,8 +988,8 @@
           <a href="#feedbacks" class="nav-link footer-nav-link">Feedbacks</a>
         </li>
       </ul>
-      
-      <p class="footer-copyright"> &copy; 2025 WildDraw. All rights reserved.</p>
+
+      <p class="footer-copyright">&copy; 2025 WildDraw. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -979,7 +1004,11 @@
       </a>
       <a href="#register" class="nav-register-btn">Register</a>
 
-      <button type="button" class="mobile-menu-close-btn">
+      <button
+        type="button"
+        class="mobile-menu-close-btn"
+        aria-label="Close mobile menu"
+      >
         <svg class="mobile-menu-close-icon" width="11" height="11">
           <use href="/project-html_css-1/assets/sprite-DfbCbrtv.svg#icon-close-btn"></use>
         </svg>
