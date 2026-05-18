@@ -40,6 +40,7 @@
   justify-content: space-between;
   align-items: center;
   height: 64px;
+  margin-bottom: 16px;
 }
 
 .mobile-menu-close-btn {
@@ -54,11 +55,6 @@
   margin-left: 28px;
 }
 
-
-.mobile-menu-nav {
-  margin-top: 16px;
-}
-
 .mobile-menu-link {
   font-size: 18px;
 }
@@ -67,7 +63,4 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 16px;
 }
-
-
