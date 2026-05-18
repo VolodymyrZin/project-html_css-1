@@ -42,7 +42,7 @@
     max-width: 601px;
   }
 }
- 
+
 .hero-text {
   font-size: 18px;
 
@@ -51,7 +51,7 @@
   }
 }
 
-.hero-btn-links {
+.hero-btn-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
