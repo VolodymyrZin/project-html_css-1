@@ -45,18 +45,36 @@
           </li>
         </ul>
       </div>
-      <img
-        src="/img/avif/benefits-hippo.avif"
-        srcset="
-          /img/avif/benefits-hippo.avif    1x,
-          /img/avif/benefits-hippo@2x.avif 2x
-        "
-        alt="little hippo"
-        class="benefits-hippo-img"
-        loading="lazy"
-        width="335"
-        height="317"
-      />
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/avif/benefits-hippo-desktop.avif    1x,
+            /img/avif/benefits-hippo-desktop@2x.avif 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/avif/benefits-hippo-tablet.avif    1x,
+            /img/avif/benefits-hippo-tablet@2x.avif 2x
+          "
+        />
+
+        <img
+          srcset="
+            /img/avif/benefits-hippo-mobile.avif    1x,
+            /img/avif/benefits-hippo-mobile@2x.avif 2x
+          "
+          src="/img/avif/benefits-hippo-mobile.avif"
+          alt="little hippo"
+          class="benefits-hippo-img"
+          loading="lazy"
+          width="335"
+          height="317"
+        />
+      </picture>
     </div>
   </div>
 </section>
