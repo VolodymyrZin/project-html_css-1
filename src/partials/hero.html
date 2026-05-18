@@ -20,14 +20,32 @@
       </ul>
     </div>
 
-    <img
-      srcset="/img/avif/hero-house.avif 1x, /img/avif/hero-house@2x.avif 2x"
-      src="/img/avif/hero-house.avif"
-      alt="hero house"
-      fetchpriority="high"
-      loading="lazy"
-      width="335"
-      height="258"
-    />
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /img/avif/hero-house-desktop.avif    1x,
+          /img/avif/hero-house-desktop@2x.avif 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/avif/hero-house-tablet.avif    1x,
+          /img/avif/hero-house-tablet@2x.avif 2x
+        "
+      />
+      <img
+        srcset="
+          /img/avif/hero-house-mobile.avif    1x,
+          /img/avif/hero-house-mobile@2x.avif 2x
+        "
+        src="/img/avif/hero-house-mobile.avif"
+        alt="hero house"
+        fetchpriority="high"
+        width="335"
+        height="258"
+      />
+    </picture>
   </div>
 </section>
